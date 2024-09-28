@@ -1,7 +1,7 @@
 # AWS-IAM-User-Setup
 This guide outlines how to create an AWS IAM user, group, and custom policy to allow full access to **EC2**, **S3**, **RDS**, and **Route 53** services using the AWS CLI.
 
-# AWS IAM User Setup with Full EC2, S3, RDS, and Route 53 Access
+### AWS IAM User Setup with Full EC2, S3, RDS, and Route 53 Access
 
 This guide outlines the step-by-step process of creating an AWS IAM user, group, and attaching a custom policy to allow full access to **EC2**, **S3**, **RDS**, and **Route 53** services using the AWS CLI.
 
@@ -150,3 +150,6 @@ aws iam add-user-to-group --user-name test-user --group-name developers
 # (Optional) Create access keys for the user
 aws iam create-access-key --user-name test-user
 ```
+
+Note:
+This process creates a new user, adds them to a group, and grants full access to EC2, S3, RDS, and Route 53 via a custom policy.
